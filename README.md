@@ -1,12 +1,19 @@
 # 股票策略交易系统-爬虫
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
-
+该项目是一个教学项目，不用于商业目的。
+该项目的股票策略交易系统的爬虫部分，采用scrapy做为框架。爬取沪深300，股票交易信息，公司财务信息，汇率信息，公告信息。
+收集的数据用于训练模型和评价策略。
+1. 数据采集：爬取的网址包括沪深300指数，股票交易信息，公司财务信息，汇率信息，公告信息等。
+2. 数据处理：对爬取的数据进行清洗和预处理，如去除无效数据，处理缺失值，数据类型转换等。
+3. 数据存储：将处理后的数据存储到Mysql数据库中（一期）Hive(二期)，以便于后续的数据分析和模型训练。
+4. 数据可视化：使用matplotlib，seaborn等库对数据进行可视化分析，以便更好地理解数据的特性和规律。
+5. 模型训练：根据收集的数据训练股票策略交易模型，如线性回归，决策树，随机森林，神经网络等。
+6. 模型评估：使用交叉验证等方法对模型进行评估，以确定模型的性能和稳定性。
+7. 策略优化：根据模型的评估结果，优化股票交易策略，以提高投资回报。
+8. 系统监控：实时监控股票交易市场的变化，以便及时调整策略。
 #### 软件架构
-软件架构说明
+爬虫部分采用scrapy做框架。
 
 
 #### 安装教程
@@ -23,17 +30,7 @@ Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN�
 
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+1.  马时易初
 
 
-#### 特技
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
